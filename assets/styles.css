@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: rgb(41, 41, 39);
+  color: white;
+}
+
+.icon {
+  height: 2rem;
+}
+
+.icon-click {
+  cursor: pointer;
+  height: 2rem;
+}
+ul {
+  list-style-type: none;
+}
+
+section {
+  height: 100vh;
+}
+
+.bouton-haut {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
