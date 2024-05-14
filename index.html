@@ -11,10 +11,12 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-white bg-white" id="nav">
-      <a class="navbar-brand ms-3 me-5" href="#">Charles Casabianca</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
+      <a class="navbar-brand ms-5 me-4 fa-solid fa-code fa-2xl" style="color: #879d9e;" href="#"></a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-5">
           <li class="nav-item">
@@ -26,22 +28,23 @@
           <li class="nav-item">
             <a class="nav-link" href="#projets">Projets</a>
           </li>
-        </ul>
-        <form class="form">
-          <button class="btn" type="button" onclick="darkMode()">
-            Mode Nuit
-          </button>
-        </form>
+        <li>
+          <a class="btn nav-link disabled" onclick="darkMode()">Mode Nuit</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projets">Projets</a>
+        </li>
+      </ul>
       </div>
     </nav>
-    <section id="home">
-      <div class="d-flex justify-content-center mt-5">
-        <h1>Charles Casabianca</h1>
+    <section id="home" class="bleu">
+      <div class="d-flex ms-5 pt-5">
+        <div class="titre mt-5">Charles Casabianca</div>
       </div>
-      <div class="d-flex justify-content-center mt-2">
+      <div class="d-flex ms-5 mt-2">
         <h2>Développeur Web</h2>
       </div>
-      <div class="d-flex justify-content-center mt-4">
+      <div class="d-flex justify-content-center bas-page">
         <img
           src="assets/linkedin.png"
           class="icon-click me-2"
@@ -66,19 +69,13 @@
         <button
           class="btn btn-outline-dark mt-3"
           type="button"
-          onclick="location.href='./#contact'"
+          onclick="location.href='#contact'"
         >
           Me contacter
         </button>
       </div>
-      <div class="d-flex justify-content-end">
-        <button
-          class="btn btn-outline-dark me-2 position-fixed"
-          type="button"
-          onclick="location.href='./#'"
-        >
-          Revenir à l'accueil
-        </button>
+      <div class="d-flex justify-content-end fixed-bottom">
+        <i class="fleche-haut fa-solid fa-arrow-up fa-2xl me-5 mb-5" onclick="location.href='#'"></i>
       </div>
     </section>
     <!--  -->
@@ -116,7 +113,7 @@
     <!--  -->
     <!-- Compétences -->
     <!--  -->
-    <section id="competences">
+    <section id="competences" class="bleu">
       <div class="d-flex justify-content-center">
         <h1 class="mt-5">Mes Compétences</h1>
       </div>
@@ -155,7 +152,7 @@
           Site Symfony
         </h3>
         <div class="d-flex justify-content-center mt-5">
-          <img src="assets/projet1.png" class="" alt="Compétences" />
+          <img src="assets/projet1.png" class="hover-zoom" alt="Compétences" />
         </div>
         <div class="d-flex justify-content-center mt-2">
          Application Web mise en place avec le framework Symfony.
@@ -165,10 +162,23 @@
          </div>
       </div>
     </section>
+    <section id="contact">
+      <div class="d-flex justify-content-center mt-5">
+        <h1 class="mt-5">Contact</h1>
+      </div>
+      <div>
+        <div class="d-flex justify-content-center mt-5">
+          <img src="assets/experience.png" class="icon" alt="Compétences" />
+        </div>
+        <h3 class="d-flex justify-content-center mt-5">
+          c.casabianca@live.fr
+        </h3>
+      </div>
+    </section>
    <!--  -->
     <!-- Footer -->
     <!--  -->
-    <footer class="d-flex justify-content-center bg-secondary mt-5">
+    <footer class="d-flex justify-content-center pt-5 pb-3 bleu">
       <ul>
         <li>
           <img

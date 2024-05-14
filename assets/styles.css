@@ -3,6 +3,8 @@
   font-family: "Poppins", sans-serif;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   background-color: white;
   color: black;
@@ -13,14 +15,28 @@ body {
   color: white;
 }
 
+.titre {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 5rem;
+}
+
+
 .icon {
   height: 2rem;
 }
 
 .icon-click {
   cursor: pointer;
-  height: 2rem;
+  height: 4rem;
 }
+
+.fleche-haut {
+  cursor: pointer;
+}
+
 ul {
   list-style-type: none;
 }
@@ -33,4 +49,16 @@ section {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+}
+
+.bas-page {
+margin-top: 10rem;
+}
+
+.bleu{
+background-color: cornflowerblue;
+}
+
+.gris{
+  background-color: #879d9e;
 }
