@@ -15,8 +15,8 @@
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
-      <a class="navbar-brand ms-5 me-4 fa-solid fa-code fa-2xl" style="color: #879d9e;" href="#"></a>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" id="nav">
+      <a class="navbar-brand ms-5 me-4" href="#"><i class="fa-solid fa-code fa-2xl txt-gris"></i></a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-5">
           <li class="nav-item">
@@ -28,16 +28,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
           <li class="nav-item">
             <a class="nav-link" href="#projets">Projets</a>
           </li>
-        <li>
-          <a class="btn nav-link disabled" onclick="darkMode()">Mode Nuit</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projets">Projets</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
       </ul>
       </div>
     </nav>
-    <section id="home" class="bleu">
+    <section id="home">
       <div class="d-flex ms-5 pt-5">
         <div class="titre mt-5">Charles Casabianca</div>
       </div>
@@ -59,37 +56,30 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         />
       </div>
       <div class="d-flex justify-content-center">
-        <button
-          class="btn btn-outline-dark me-2 mt-3"
-          type="button"
-          onclick="window.open('./assets/CV.pdf')"
-        >
-          Télécharger mon CV
-        </button>
-        <button
+        <!-- <button
           class="btn btn-outline-dark mt-3"
           type="button"
           onclick="location.href='#contact'"
         >
           Me contacter
-        </button>
+        </button> -->
       </div>
       <div class="d-flex justify-content-end fixed-bottom">
-        <i class="fleche-haut fa-solid fa-arrow-up fa-2xl me-5 mb-5" onclick="location.href='#'"></i>
+        <i class="fa-solid fa-arrow-up fa-2xl me-5 mb-5" id="flecheHaut" onclick="location.href='#'"></i>
       </div>
     </section>
     <!--  -->
     <!-- Parcours -->
     <!--  -->
     <section id="parcours">
-      <div class="d-flex justify-content-center">
+      <div class="d-flex justify-content-center pt-5">
         <h1 class="mt-5">Mon Parcours</h1>
       </div>
       <div>
         <div class="d-flex justify-content-center mt-5">
-          <img src="assets/experience.png" class="icon" alt="Expérience" />
+          <i class="fa-solid fa-briefcase fa-2xl" style="color: #ffffff;"></i>
         </div>
-        <h3 class="d-flex justify-content-center mt-2">
+        <h3 class="d-flex justify-content-center mt-4">
           Expérience Professionnelle
         </h3>
         <div class="d-flex justify-content-center mt-2">
@@ -101,104 +91,140 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       </div>
       <div>
         <div class="d-flex justify-content-center mt-5">
-          <img src="assets/diplomes.png" class="icon" alt="Diplômes" />
+          <i class="fa-solid fa-graduation-cap fa-2xl" style="color: #ffffff;"></i>
         </div>
-        <h3 class="d-flex justify-content-center mt-2">Diplômes</h3>
+        <h3 class="d-flex justify-content-center mt-4">Diplômes</h3>
         <div class="d-flex justify-content-center mt-2">
           Titre Professionnel Développeur Web et Web Mobile - AFPA
         </div>
         <div class="d-flex justify-content-center">Mai 2022 - Avril 2023</div>
       </div>
+      <div class="d-flex justify-content-center mt-5">
+      <button
+      class="btn btn-dark txt-gris me-2 mt-3"
+      type="button"
+      onclick="window.open('./assets/CV.pdf')"
+    >
+      Télécharger mon CV
+    </button>
+  </div>
     </section>
     <!--  -->
     <!-- Compétences -->
     <!--  -->
-    <section id="competences" class="bleu">
-      <div class="d-flex justify-content-center">
+    <section id="competences">
+      <div class="d-flex justify-content-center pt-5">
         <h1 class="mt-5">Mes Compétences</h1>
       </div>
       <div>
-        <div class="d-flex justify-content-center mt-5">
-          <img src="assets/checkmark.png" class="icon" alt="Compétences" />
+        <div class="d-flex justify-content-around mt-5">
+          <i class="fa-solid fa-book fa-2xl"></i>
+          <i class="fa-solid fa-wrench fa-2xl"></i>
         </div>
-        <h3 class="d-flex justify-content-center mt-2">
-          Développement
-        </h3>
-        <div class="d-flex justify-content-center mt-2">
-         HTML CSS Javascript PHP SQL Symfony
+        <div class="d-flex justify-content-around mt-4">
+        <h3>Langages</h3>
+        <h3>Outils</h3>
+      </div>
+        <div class="d-flex justify-content-around mt-2">  
+
+<ul>
+  <li class="mt-3"><i class="fa-brands fa-html5 fa-2xl" style="color: #ed3f2c;"></i> HTML</li>
+<li class="mt-3"><i class="fa-brands fa-css3-alt fa-2xl" style="color: #74C0FC;"></i> CSS</li>
+<li class="mt-3"><i class="fa-brands fa-js fa-2xl" style="color: #ffce1f;"></i> JavaScript</li>
+<li class="mt-3"><i class="fa-brands fa-php fa-2xl" style="color: #805af2;"></i> PHP</li>
+</ul>
+<ul>
+  <li class="mt-3"></li><i class="fa-brands fa-github fa-2xl"></i> GitHub</li>
+<li class="mt-3"><i class="fa-brands fa-bootstrap fa-2xl" style="color: #902ae5;"></i> BootStrap</li>
+<li class="mt-3"><i class="fa-brands fa-wordpress fa-2xl" style="color: #74C0FC;"></i> WordPress</li>
+<li class="mt-3"><i class="fa-solid fa-database fa-2xl" style="color: #74C0FC;"></i> SQL</li>
+<li class="mt-3"><i class="fa-brands fa-symfony fa-2xl"></i> Symfony</li>
+</ul>
+         </div>
         </div>
       </div>
       <div>
-        <div class="d-flex justify-content-center mt-5">
-          <img src="assets/checkmark.png" class="icon" alt="Outils" />
-        </div>
-        <h3 class="d-flex justify-content-center mt-2">Outils</h3>
-        <div class="d-flex justify-content-center mt-2">
-          GitHub Hébergement Symfony BootStrap Postman Anglais
-        </div>
     </section>
     <!--  -->
     <!-- Projets -->
     <!--  -->
     <section id="projets">
-      <div class="d-flex justify-content-center mt-5">
+      <div class="d-flex justify-content-center pt-5 mb-5">
         <h1 class="mt-5">Mes Projets</h1>
       </div>
-      <div>
-        <div class="d-flex justify-content-center mt-5">
-          <img src="assets/experience.png" class="icon" alt="Compétences" />
-        </div>
-        <h3 class="d-flex justify-content-center mt-2">
-          Site Symfony
-        </h3>
-        <div class="d-flex justify-content-center mt-5">
-          <img src="assets/projet1.png" class="hover-zoom" alt="Compétences" />
-        </div>
-        <div class="d-flex justify-content-center mt-2">
-         Application Web mise en place avec le framework Symfony.
-        </div>
-        <div class="d-flex justify-content-center">
-          L'application utilise une base de données SQL.
-         </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4 me-3 ms-3">
+  <div class="col">
+    <div class="card zoom text-center">
+      <img src="/assets/projet1.png" class="card-img-top" alt="Projet Symfony">
+      <div class="card-body">
+        <h5 class="card-title">Site Symfony</h5>
+        <p class="card-text">Application web mise en place avec le framework Symfony. Utilise une base de données SQL.</p>
       </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card zoom text-center">
+      <img src="/assets/projet1.png" class="card-img-top" alt="Projet Three.js">
+      <div class="card-body">
+        <h5 class="card-title">Animation Three.js</h5>
+        <p class="card-text">Animation créée avec Three.js.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card zoom text-center">
+      <img src="/assets/projet1.png" class="card-img-top" alt="Projet Next.js">
+      <div class="card-body">
+        <h5 class="card-title">Site Next.js</h5>
+        <p class="card-text">Développement avec le framework Next.js.</p>
+      </div>
+    </div>
+  </div>
+</div>
     </section>
     <section id="contact">
-      <div class="d-flex justify-content-center mt-5">
+      <div class="d-flex justify-content-center pt-5">
         <h1 class="mt-5">Contact</h1>
       </div>
       <div>
         <div class="d-flex justify-content-center mt-5">
-          <img src="assets/experience.png" class="icon" alt="Compétences" />
+
+          <i class="fa-solid fa-envelope fa-2xl" style="color: #ffffff;"></i>
         </div>
         <h3 class="d-flex justify-content-center mt-5">
           c.casabianca@live.fr
         </h3>
       </div>
+      <div class="d-flex justify-content-center mt-5">
+        <i class="fa-solid fa-phone fa-2xl" style="color: #ffffff;"></i>
+      </div>
+      <h3 class="d-flex justify-content-center mt-5">
+        06 75 81 30 52
+      </h3>
+    </div>
     </section>
    <!--  -->
     <!-- Footer -->
     <!--  -->
-    <footer class="d-flex justify-content-center pt-5 pb-3 bleu">
-      <ul>
-        <li>
+    <footer class="d-flex flex-row justify-content-around align-items-center py-3">
+      <div>
+       <h4> © Charles Casabianca - 2024 </h4>
+      </div>
+      <div>
           <img
             src="assets/linkedin.png"
             class="icon-click"
             onclick="location.href='https://www.linkedin.com/in/charles-casabianca'"
             alt="LinkedIn"
           />
-        </li>
-        <li>
           <img
             src="assets/github.png"
             class="icon-click"
             onclick="location.href='https://github.com/Ccasabianca'"
             alt="GitHub"
           />
-        </li>
-      </ul>
+        </div>
     </footer>
-
     <script src="assets/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
