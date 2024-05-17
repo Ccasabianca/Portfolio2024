@@ -1,4 +1,9 @@
-function darkMode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
+window.addEventListener("scroll", function () {
+  let arrowTop = document.getElementById("flecheHaut");
+  let lastPage = document.getElementById("projets");
+  if (window.scrollY > lastPage.offsetTop + lastPage.offsetHeight) {
+    arrowTop.style.display = "block";
+  } else {
+    arrowTop.style.display = "none";
   }
+});
