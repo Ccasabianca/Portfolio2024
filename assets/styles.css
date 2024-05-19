@@ -68,27 +68,27 @@ section {
 }
 
 #home {
-  background-image: url("../assets/bg1.png");
+  background-image: url("assets/bg1.png");
 }
 
 #parcours {
-  background-image: url("../assets/bg4.png");
+  background-image: url("assets/bg4.png");
   color: #fff;
 }
 
 #competences {
-  background-image: url("../assets/bg1.png");
+  background-image: url("assets/bg1.png");
 }
 #projets {
-  background-image: url("../assets/bg1.png");
+  background-image: url("assets/bg1.png");
 }
 #contact {
-  background-image: url("../assets/bg4.png");
+  background-image: url("assets/bg4.png");
   color: #fff;
 }
 
 footer {
-  background-image: url("../assets/bg1.png");
+  background-image: url("assets/bg1.png");
 }
 
 .zoom {
