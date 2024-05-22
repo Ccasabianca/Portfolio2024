@@ -27,9 +27,7 @@ html {
   font-style: normal;
   font-size: 5rem;
 }
-.footerdiv {
-  font-size: 2rem;
-}
+
 .icon {
   height: 2rem;
 }
@@ -90,6 +88,10 @@ footer {
   background-image: url("bg1.png");
 }
 
+.footerdiv {
+  font-size: 1.5rem;
+}
+
 .zoom {
 transition: all 0.3s;
 }
@@ -105,9 +107,6 @@ transition: all 0.3s;
 @media (max-width: 768px) {
   .titre {
     font-size: 2.5rem;
-  }
-  .footerdiv {
-    font-size: 1.5rem ;
   }
 }
 
