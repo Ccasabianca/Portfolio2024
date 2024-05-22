@@ -5,13 +5,16 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-body, html {
+body {
   background-color: white;
   color: black;
-    /* overflow-x: hidden; */
-    /* overflow-y: hidden; */
+  overflow:hidden;
 }
 
+html {
+  overflow:hidden;
+  overflow-y:scroll;
+}
 .dark-mode {
   background-color: rgb(41, 41, 39);
   color: white;
@@ -24,7 +27,9 @@ body, html {
   font-style: normal;
   font-size: 5rem;
 }
-
+.footerdiv {
+  font-size: 2rem;
+}
 .icon {
   height: 2rem;
 }
@@ -101,10 +106,19 @@ transition: all 0.3s;
   .titre {
     font-size: 2.5rem;
   }
+  .footerdiv {
+    font-size: 1.5rem ;
+  }
 }
 
 @media (min-width: 768px) {
   section {
     height: 100vh;
+  }
+}
+
+@media (max-width:490px){
+  .footerdiv {
+    font-size: 1rem ;
   }
 }
