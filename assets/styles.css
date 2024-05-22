@@ -5,9 +5,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-body {
+body, html {
   background-color: white;
   color: black;
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
 }
 
 .dark-mode {
@@ -41,10 +43,6 @@ ul {
   list-style-type: none;
 }
 
-section {
-  height: 100vh;
-}
-
 .bouton-haut {
   position: absolute;
   right: -5rem;
@@ -61,10 +59,6 @@ section {
 
 .gris {
   background-color: #879d9e;
-}
-
-.txt-blanc {
-  color: #879d9e !important;
 }
 
 #home {
@@ -97,4 +91,20 @@ transition: all 0.3s;
 
 .zoom:hover{
   transform: scale(1.10);
+}
+
+/*  */
+/* Media Queries */
+/*  */
+
+@media (max-width: 768px) {
+  .titre {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  section {
+    height: 100vh;
+  }
 }

@@ -12,9 +12,10 @@
 </head>
 
 <body>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" id="nav">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="nav">
     <a class="navbar-brand ms-5 me-4" href="#"><i class="fa-solid fa-code fa-2xl txt-gris"></i></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon pe-5"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -67,7 +68,7 @@
     <div class="d-flex justify-content-center pt-5">
       <h1 class="mt-5">Mon Parcours</h1>
     </div>
-    <div>
+    <div class="container">
       <div class="d-flex justify-content-center mt-5">
         <i class="fa-solid fa-briefcase fa-2xl" style="color: #ffffff;"></i>
       </div>
@@ -92,7 +93,7 @@
       <div class="d-flex justify-content-center">Mai 2022 - Avril 2023</div>
     </div>
     <div class="d-flex justify-content-center mt-5">
-      <button class="btn btn-dark txt-gris me-2 mt-3" type="button" onclick="window.open('./assets/CV.pdf')">
+      <button class="btn btn-dark txt-gris" type="button" onclick="window.open('./assets/CV.pdf')">
         Télécharger mon CV
       </button>
     </div>
@@ -162,7 +163,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col pb-5">
         <div class="card zoom text-center">
           <img src="assets/projet1.png" class="card-img-top" alt="Projet Next.js">
           <div class="card-body">
@@ -179,32 +180,29 @@
     <div class="d-flex justify-content-center pt-5">
       <h1 class="mt-5">Contact</h1>
     </div>
-    <div>
-      <!-- <div class="d-flex justify-content-center mt-5">
-        <i class="fa-solid fa-envelope fa-2xl" style="color: #ffffff;"></i>
-      </div> -->
       <div class="d-flex mt-5 justify-content-center">
         <form action="https://formspree.io/f/xoqrzlnz" method="POST" class="text-center">
-<div>
-              <input required type="email" name="email" width="100%" placeholder="Votre email" class="form-control-lg">
-            </div>
-            <div>
-              <textarea required name="message" rows="4" cols="40" placeholder="Votre message" class="form-control-lg mt-2"></textarea>
-            </div>
+          <div>
+            <input required type="email" name="email" width="100%" placeholder="Votre email" class="form-control-lg">
+          </div>
+          <div>
+            <textarea required name="message" rows="4" placeholder="Votre message"
+              class="form-control-lg mt-2"></textarea>
+          </div>
           <button type="submit" class="btn btn-dark text-center mt-2">Envoyer</button>
         </form>
       </div>
       <h3 class="d-flex justify-content-center mt-5">
         c.casabianca@live.fr
       </h3>
-    </div>
-    <div class="d-flex justify-content-center mt-5">
+      <div>
+        <div class="d-flex justify-content-center mt-5">
       <i class="fa-solid fa-phone fa-2xl" style="color: #ffffff;"></i>
     </div>
     <h3 class="d-flex justify-content-center mt-5">
       06 75 81 30 52
     </h3>
-    </div>
+  </div>
   </section>
   <!--  -->
   <!-- Footer -->
