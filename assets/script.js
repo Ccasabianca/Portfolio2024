@@ -1,3 +1,5 @@
+"use strict";
+
 window.addEventListener("scroll", function () {
   let arrowTop = document.getElementById("flecheHaut");
   let lastPage = document.getElementById("projets");
