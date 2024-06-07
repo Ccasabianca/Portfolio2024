@@ -69,27 +69,27 @@ margin:auto;
 }
 
 #home {
-  background-image: url("bg1.png");
+  background-image: url("bg1.jpg");
 }
 
 #parcours {
-  background-image: url("bg4.png");
+  background-image: url("bg4.jpg");
   color: #fff;
 }
 
 #competences {
-  background-image: url("bg1.png");
+  background-image: url("bg1.jpg");
 }
 #projets {
-  background-image: url("bg1.png");
+  background-image: url("bg1.jpg");
 }
 #contact {
-  background-image: url("bg4.png");
+  background-image: url("bg4.jpg");
   color: #fff;
 }
 
 footer {
-  background-image: url("bg1.png");
+  background-image: url("bg1.jpg");
 }
 
 .footerdiv {
