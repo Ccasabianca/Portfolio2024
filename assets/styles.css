@@ -28,13 +28,8 @@ html {
   font-size: 5rem;
 }
 
-.icon {
-  height: 2rem;
-}
-
 .icon-click {
   cursor: pointer;
-  height: 4rem;
 }
 
 #flecheHaut {
