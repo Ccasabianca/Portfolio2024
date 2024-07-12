@@ -47,10 +47,6 @@ ul {
   bottom: 2.5rem;
 }
 
-.demi{
-width: 50%;
-margin:auto;
-}
 .bas-page {
   margin-top: 10rem;
 }
@@ -65,15 +61,18 @@ margin:auto;
 
 #home {
   background-image: url("bg1.jpg");
+  height: 100vh;
 }
 
 #parcours {
   background-image: url("bg4.jpg");
   color: #fff;
+  height: 100vh;
 }
 
 #competences {
   background-image: url("bg1.jpg");
+  height: 100vh;
 }
 #projets {
   background-image: url("bg1.jpg");
